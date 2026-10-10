@@ -1,0 +1,34 @@
+{
+  "name": "shadow-fight",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Offline 1v1 fighting game, Shadow Fight 2 style, player vs AI bot",
+  "workspaces": [
+    "shared",
+    "client"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w client",
+    "build": "npm run build -w client",
+    "preview": "npm run preview -w client",
+    "lint": "node node_modules/eslint/bin/eslint.js .",
+    "test": "node node_modules/vitest/vitest.mjs run",
+    "test:watch": "node node_modules/vitest/vitest.mjs",
+    "test:coverage": "node node_modules/vitest/vitest.mjs run --coverage",
+    "test:e2e": "node node_modules/@playwright/test/cli.js test",
+    "typecheck": "node node_modules/typescript/bin/tsc -p jsconfig.check.json --noEmit"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.64.0",
+    "@vitest/coverage-v8": "^5.0.3",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}

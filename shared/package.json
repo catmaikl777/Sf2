@@ -1,0 +1,19 @@
+{
+  "name": "@sf/shared",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic fight simulation, configs and AI shared between client and tests",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./config": "./src/config/index.js",
+    "./sim": "./src/sim/index.js",
+    "./ai": "./src/ai/index.js",
+    "./replay": "./src/replay/index.js",
+    "./profile": "./src/profile/index.js"
+  },
+  "scripts": {
+    "test": "vitest run --root .. shared/test"
+  }
+}
