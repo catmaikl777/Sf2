@@ -1,13 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#0d0b12" />
     <title>Shadow Fight</title>
-    <script type="module" crossorigin src="./client/dist/assets/index-Cb_XOD-S.js"></script>
-    <link rel="stylesheet" crossorigin href="./client/dist/assets/index.css">
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #0d0b12;
+        overflow: hidden;
+        touch-action: none;
+      }
+      #game {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      canvas {
+        image-rendering: pixelated;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-Cb_XOD-S.js"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="game"></div>
   </body>
 </html>
